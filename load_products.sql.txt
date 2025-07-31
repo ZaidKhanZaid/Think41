@@ -1,0 +1,24 @@
+CREATE DATABASE ecommerce;
+use ecommerce;
+
+create table products(
+id int primary key,
+cost decimal(10,2),
+category varchar(100),
+name varchar(255),
+brand varchar(100),
+retail_price decimal(10,2),
+department varchar(100),
+sku varchar(100),
+distribution_center_id int);
+
+set global local_infile = 1;
+load data local infile 'C:\\Users\\Mohd Zaid\\Desktop\\products.csv'
+into table products
+fields terminated by ','
+enclosed by '"'
+lines terminated by '\n'
+ignore 1 rows;
+show variables like 'local_infile';
+
+select * from products limit 10;
