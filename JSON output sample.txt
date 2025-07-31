@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "description": "Compact wireless mouse with USB receiver",
+    "price": 799.0
+  },
+  {
+    "id": 2,
+    "name": "Gaming Keyboard",
+    "description": "Mechanical RGB keyboard",
+    "price": 1999.0
+  }
+]
